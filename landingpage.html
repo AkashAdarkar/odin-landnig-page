@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        body,html{
+            padding:0;
+            margin:0;
+            height: 100%;
+            font-family: "Roboto", serif;
+          
+        }
+     header{
+        /* border:2px solid red; */
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%; /* Make header responsive */
+        
+        
+        
+    }
+    #nav-container{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           /* padding: 15px; */
+          
+        }
+        
+        header a{
+            color:#e5e7eb;
+            text-decoration: none;
+        }
+        
+        header li{
+            list-style-type: none;
+            padding: 5px;
+
+        }
+        #links-container{
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        #placeholder{
+            display: flex;
+            /* border:1px solid red; */
+        }
+        #mountains{
+            width: 900px;
+            height: 300px;
+        }
+        #header-container{
+           background-color: #1f2937;
+
+
+        display: flex;
+        justify-content: center;
+        padding:50px;
+       }
+       #hero-main-text{
+        color:#f9faf8;
+        font-size: 48px;
+        font-weight: 900;
+       }
+       #hero-secondary-text{
+        color:#e5e7eb;
+        font-size: 18px;
+       }
+       #header-logo{
+        font-size: 24px;
+        color:#F9FAF8;
+       }
+
+       .sign-up{
+        background-color: #3882f6;
+        padding:10px;
+        border: none;
+        color:#fff;
+        font-weight: 700;
+        border-radius:3px;
+       }
+
+
+       main{
+        width:1000px;
+        /* border: 1px solid red; */
+       }
+
+       #main-container{
+        display: flex;
+        justify-content: center;
+        /* border: 5px solid green; */
+       }
+       #information-header-text{
+        text-align: center;
+       }
+
+       #gallery{
+        display: flex;
+        justify-content: space-around;
+       }
+       #gallery img{
+        height: 150px;
+        border-radius: 30px;
+        border: 5px solid #3882f6;
+       }
+       .info{
+        text-align: center;
+        /* border: 3px solid black; */
+        color:#3e3e3f
+       }
+
+       .info p{
+        font-size: 16px;
+       }
+
+       .quote-text{
+        background-color: #e5e7eb;
+        width: 1000px;
+        /* border: 2px solid blue; */
+        font-size: 36px;
+        font-weight: light;
+        font-style: italic;
+        color: #1f2937;
+        
+    }
+    
+    #qoutes-container{
+        background-color: #e5e7eb;
+        display: flex;
+        justify-content: center;
+        /* border: 5px solid orange; */
+       }
+
+       #author{
+        text-align: right;
+       }
+
+
+       #action-container{
+        display: flex;
+        justify-content: center;
+       }
+
+       #action-bar{
+        background-color: #3882f6;
+        color: #e5e7eb;
+        width:800px;
+        display: flex;
+        justify-content: space-between;
+        border-radius:3px;
+        padding:35px;
+        margin: 45px;
+        /* border: 2px solid black; */
+       }
+
+       #action-bar button{
+        margin: 30px 12px;
+        
+        border:1px solid #e5e7eb
+       }
+
+      
+
+       #footer-container{
+        background-color: #1f2937;
+        text-align: center;
+        color:#e5e7eb;
+        padding:26px
+       }
+
+      
+       
+    </style>
+</head>
+<body>
+    <div id="header-container">
+
+        <header>
+            
+            
+            <nav id="nav-container">
+                <h1><a id="header-logo" href="">Home</a></h1>
+                <ul id="links-container">
+                    <li><a href="http://">link</a></li>
+                    <li><a href="http://">link</a></li>
+                    <li><a href="http://">link</a></li>
+                </ul>
+            </nav>
+            
+            <div id="placeholder" >
+                <div id="text">
+
+                   <h1 id="hero-main-text">This Website is awesome</h1>
+                    <p id="hero-secondary-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error et iusto reprehenderit hic officiis, consequatur non praesentium nihil! Libero incidunt reiciendis dicta!</p>
+                    <button class="sign-up">Sign Up</button>
+                </div>
+                <img id ="mountains"src="./assets/mountains.jpg" alt="mountains pic">
+                </div>
+    </header>
+</div>
+<div id="main-container">
+    <main>
+        
+        <h1 id="information-header-text">
+            Some Random Information
+        </h1>
+        <div id="gallery">
+            <div class="info">
+
+                <img src="./assets/soundwave.jpeg" alt=""><p>soundwave superior,autobots inferior</p>
+            </div>
+
+                <div class="info">
+
+                    <img src="./assets/soundwave.jpeg" alt=""><p>soundwave superior,autobots inferior</p>
+                </div>
+                    <div class="info">
+                        
+                        <img src="./assets/soundwave.jpeg" alt=""><p>soundwave superior,autobots inferior</p>
+                    </div>
+            <div class="info">
+
+                <img src="./assets/soundwave.jpeg" alt=""><p>soundwave superior,autobots inferior</p>
+            </div>
+        </div>
+        
+    </main>
+</div>
+<div id="qoutes-container">
+
+    <!-- <div id="qoutes"> -->
+        <div class="quote-text">
+            
+            <p>"Everything I Touch Is Food For My Hunger. My Hunger For Power!" </p>
+            <p id="author"><b>-Lord Megatron</b></p>
+        </div>
+    <!-- </div> -->
+</div>
+
+<div id="action-container">
+    <div id="action-bar">
+       
+
+            <div id="action-text">
+                
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <button class="sign-up">Sign Up</button>
+        
+    </div>
+</div>
+<div id="footer-container">
+
+    <footer>
+       Copyright &copy The Odin Project 2024 -Akash
+    </footer>
+</div>
+</body>
+</html>
